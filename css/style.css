@@ -1,0 +1,50 @@
+:root {
+    --ff1: 'Twinkle Star', cursive;
+    --ff2: 'Zilla Slab', serif;
+
+    --c1: #D90416;
+    --c2: #73020C;
+    --c3: white;
+    --c4: #BF6E50;
+    --c5: #402421;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    transition: all 0.2s linear;
+    background: var(--c5);
+    color: var(--c3);
+    font-family: var(--ff1);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-logo h3{
+    margin: 2rem;
+    font-size: 2.5rem;
+    cursor: pointer;
+}
+
+.nav-social a i{
+    cursor: pointer;
+    font-size: 2rem;
+    margin: 1rem;
+}
+
+.nav-social a i:hover{
+    cursor: pointer;
+    font-size: 2rem;
+    margin: 1rem;
+    color: #73020C;
+    transition-duration: .7s;
+    transform: rotate(360deg) scale(1.2);
+}
