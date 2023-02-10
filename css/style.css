@@ -85,6 +85,8 @@ body {
 }
 
 .header .icons i{
+    margin: 2rem;
+    font-size: 2rem;
     color: var(--c5);
     cursor: pointer;
 }
@@ -120,3 +122,20 @@ body {
     transition-duration: .7s;
     transform: rotate(360deg) scale(1.5);
 }
+
+
+
+
+/*
+
+
+ <div class="nav-social">
+
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+
+        </div>
+
+
+*/
