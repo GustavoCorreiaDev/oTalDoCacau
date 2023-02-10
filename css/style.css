@@ -7,19 +7,25 @@
     --c3: white;
     --c4: #BF6E50;
     --c5: #402421;
+
+    --border:.1rem solid white
 }
 
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    text-decoration: none;
-    border: none;
     outline: none;
-    transition: all 0.2s linear;
-    background: var(--c5);
-    color: var(--c3);
-    font-family: var(--ff1);
+    border: none;
+    text-decoration: none;
+    transition: .2s linear;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
 }
 
 header {
@@ -28,23 +34,89 @@ header {
     align-items: center;
 }
 
-.nav-logo h3{
+html::-webkit-scrollbar {
+    width: .8rem;
+}
+
+html::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+html::-webkit-scrollbar-thumb {
+    background: var(--c3);
+    border-radius: 5rem;
+}
+
+body {
+    background: var(--border);
+}
+
+.header {
+    background: var(--border);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 7%;
+    border-bottom: var(--border);
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 1000;
+}
+
+.header .logo {
+    font-size: 3rem;
+    font-family: var(--ff1);
+    color: var(--c4);
+}
+
+.header .navBar a {
     margin: 2rem;
-    font-size: 2.5rem;
+    font-size: 2rem;
+    font-family: var(--ff2);
+    color: var(--c5);
+}
+
+.header .navBar a:hover {
+    color:  var(--c1);
+    border-top: 0.4rem solid var(--c1);
+    border-bottom: 0.4rem solid var(--c1);
+    padding: 0.5rem;
+    font-weight: bolder;
+}
+
+.header .icons i{
+    color: var(--c5);
     cursor: pointer;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .nav-social a i{
     cursor: pointer;
     font-size: 2rem;
     margin: 1rem;
+    color: var(--c4);
 }
 
 .nav-social a i:hover{
     cursor: pointer;
     font-size: 2rem;
     margin: 1rem;
-    color: #73020C;
+    color: var(--c4);
     transition-duration: .7s;
-    transform: rotate(360deg) scale(1.2);
+    transform: rotate(360deg) scale(1.5);
 }
