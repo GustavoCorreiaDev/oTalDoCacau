@@ -28,6 +28,21 @@ html {
     scroll-behavior: smooth;
 }
 
+.btn {
+    margin-top: 1rem;
+    display: inline-block;
+    padding: .7rem 3rem;
+    font-size: 1.7rem;
+    color: var(--c4);
+    background: var(--c2);
+    cursor: pointer;
+}
+
+.btn:hover{
+    transform: scale(1.05);
+    color: white;
+}
+
 header {
     display: flex;
     justify-content: space-between;
@@ -48,7 +63,7 @@ html::-webkit-scrollbar-thumb {
 }
 
 body {
-    background: var(--border);
+    background: black;
 }
 
 .header {
@@ -73,7 +88,7 @@ body {
     margin: 2rem;
     font-size: 2rem;
     font-family: var(--ff2);
-    color: var(--c5);
+    color: var(--c4);
 }
 
 .header .navBar a:hover {
@@ -87,17 +102,136 @@ body {
 .header .icons i{
     margin: 2rem;
     font-size: 2rem;
-    color: var(--c5);
+    color: var(--c4);
     cursor: pointer;
+}
+
+.header .icons i:hover{
+    scale: 1.1;
+    color: var(--c1);
+}
+
+#btn-menu {
+    display: none;
+}
+
+.header .search-form {
+    position: absolute;
+    top: 115%;
+    right: 7%;
+    background: var(--c3);
+    width: 50rem;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    transform: scaleY(0);
+    transform-origin: top;
+}
+
+.header .search-form input {
+    width: 100%;
+    height: 100%;
+    font-size: 2rem;
+    color: black;
+    padding: 1rem;
+    text-transform: none;
+}
+
+.header .search-form label {
+    cursor: pointer;
+    font-size: 1.6rem;
+    margin-right: 1.5rem;
+}
+
+.header .search-form label:hover {
+    color: var(--c1);
+}
+
+.header .cart-itens-container {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    height: calc(100vh - 9.5rem);
+    width: 35rem;
+    background: white;
+    padding: 0 1.5rem;
+}
+
+.header .cart-itens-container .cart-item {
+    position: relative;
+    margin: 2rem 0;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.header .cart-itens-container .cart-item span i {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 2rem;
+    cursor: pointer;
+    color: var(black);
+}
+
+.header .cart-itens-container .cart-item span i:hover {
+    color: var(--c1);
+}
+
+.header .cart-itens-container .cart-item img {
+    height: 10rem;
+    width: 15rem;
+}
+
+.header .cart-itens-container .cart-item .content h3 {
+    font-size: 2rem;
+    color: var(--c4);
+    padding-bottom: .5rem;
+}
+
+.header .cart-itens-container .cart-item .content .price {
+    font-size: 1.5rem;
+    color: var(--c5);
+    padding-bottom: .5rem;
+}
+
+.header .cart-itens-container .btn {
+    width: 100%;
+    text-align: center;
 }
 
 
 
+/* media queries*/
 
+@media(max-width:991px){
+    html {
+        font-size: 55%;
+    }
+    .header{
+        padding: 1.5rem 2rem;
+    }
+}
 
-
-
-
+@media(max-width:991px) {
+    #menu-btn{
+        display: inline-block;
+    }
+    .header .navBar {
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        background: white;
+        width: 30rem;
+        height: calc(100vh - 9.5rem);
+    }
+    .header .navBar a {
+        display: block;
+        margin: 1.5rem;
+        padding: .5rem;
+        font-size: 2rem;
+    }
+}
 
 
 
