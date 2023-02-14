@@ -3,244 +3,23 @@
     --ff2: 'Zilla Slab', serif;
 
     --c1: #D90416;
-    --c2: #73020C;
-    --c3: white;
+    --c2: white;
     --c4: #BF6E50;
-    --c5: #402421;
+    --c5: black;
 
     --border:.1rem solid white
-}
-
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    outline: none;
-    border: none;
-    text-decoration: none;
-    transition: .2s linear;
-}
-
-html {
-    font-size: 62.5%;
-    overflow-x: hidden;
-    scroll-padding-top: 9rem;
-    scroll-behavior: smooth;
-}
-
-.btn {
-    margin-top: 1rem;
-    display: inline-block;
-    padding: .7rem 3rem;
-    font-size: 1.7rem;
-    color: var(--c4);
-    background: var(--c2);
-    cursor: pointer;
-}
-
-.btn:hover{
-    transform: scale(1.05);
-    color: white;
-}
-
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-html::-webkit-scrollbar {
-    width: .8rem;
-}
-
-html::-webkit-scrollbar-track {
-    background: transparent;
-}
-
-html::-webkit-scrollbar-thumb {
-    background: var(--c3);
-    border-radius: 5rem;
-}
-
-body {
-    background: black;
-}
-
-.header {
-    background: var(--border);
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 1.5rem 7%;
-    border-bottom: var(--border);
-    position: fixed;
-    top: 0; left: 0; right: 0;
-    z-index: 1000;
-}
-
-.header .logo {
-    font-size: 3rem;
-    font-family: var(--ff1);
-    color: var(--c4);
-}
-
-.header .navBar a {
-    margin: 2rem;
-    font-size: 2rem;
-    font-family: var(--ff2);
-    color: var(--c4);
-}
-
-.header .navBar a:hover {
-    color:  var(--c1);
-    border-top: 0.4rem solid var(--c1);
-    border-bottom: 0.4rem solid var(--c1);
-    padding: 0.5rem;
-    font-weight: bolder;
-}
-
-.header .icons i{
-    margin: 2rem;
-    font-size: 2rem;
-    color: var(--c4);
-    cursor: pointer;
-}
-
-.header .icons i:hover{
-    scale: 1.1;
-    color: var(--c1);
-}
-
-#btn-menu {
-    display: none;
-}
-
-.header .search-form {
-    position: absolute;
-    top: 115%;
-    right: 7%;
-    background: var(--c3);
-    width: 50rem;
-    height: 5rem;
-    display: flex;
-    align-items: center;
-    transform: scaleY(0);
-    transform-origin: top;
-}
-
-.header .search-form input {
-    width: 100%;
-    height: 100%;
-    font-size: 2rem;
-    color: black;
-    padding: 1rem;
-    text-transform: none;
-}
-
-.header .search-form label {
-    cursor: pointer;
-    font-size: 1.6rem;
-    margin-right: 1.5rem;
-}
-
-.header .search-form label:hover {
-    color: var(--c1);
-}
-
-.header .cart-itens-container {
-    position: absolute;
-    top: 100%;
-    right: -100%;
-    height: calc(100vh - 9.5rem);
-    width: 35rem;
-    background: white;
-    padding: 0 1.5rem;
-}
-
-.header .cart-itens-container .cart-item {
-    position: relative;
-    margin: 2rem 0;
-    display: flex;
-    align-items: center;
-    gap: 1.5rem;
-}
-
-.header .cart-itens-container .cart-item span i {
-    position: absolute;
-    top: 1rem;
-    right: 1rem;
-    font-size: 2rem;
-    cursor: pointer;
-    color: var(black);
-}
-
-.header .cart-itens-container .cart-item span i:hover {
-    color: var(--c1);
-}
-
-.header .cart-itens-container .cart-item img {
-    height: 10rem;
-    width: 15rem;
-}
-
-.header .cart-itens-container .cart-item .content h3 {
-    font-size: 2rem;
-    color: var(--c4);
-    padding-bottom: .5rem;
-}
-
-.header .cart-itens-container .cart-item .content .price {
-    font-size: 1.5rem;
-    color: var(--c5);
-    padding-bottom: .5rem;
-}
-
-.header .cart-itens-container .btn {
-    width: 100%;
-    text-align: center;
-}
 
 
 
 /* media queries*/
 
-@media(max-width:991px){
-    html {
-        font-size: 55%;
-    }
-    .header{
-        padding: 1.5rem 2rem;
-    }
-}
-
-@media(max-width:991px) {
-    #menu-btn{
-        display: inline-block;
-    }
-    .header .navBar {
-        position: absolute;
-        top: 100%;
-        right: -100%;
-        background: white;
-        width: 30rem;
-        height: calc(100vh - 9.5rem);
-    }
-    .header .navBar a {
-        display: block;
-        margin: 1.5rem;
-        padding: .5rem;
-        font-size: 2rem;
-    }
-}
 
 
 
 
 
 
-
-
-
+/*
 .nav-social a i{
     cursor: pointer;
     font-size: 2rem;
@@ -256,7 +35,7 @@ body {
     transition-duration: .7s;
     transform: rotate(360deg) scale(1.5);
 }
-
+*/
 
 
 
