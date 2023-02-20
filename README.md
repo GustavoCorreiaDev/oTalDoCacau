@@ -1,2 +1,0 @@
-# oTalDoCacau
- cardápio-digital
