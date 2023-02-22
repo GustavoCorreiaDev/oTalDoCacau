@@ -84,8 +84,9 @@ section{
     z-index: 1000;
 }
 
-.header .logo{
-    height: 1.6rem;
+.header .logo img{
+    height: 8rem;
+    border-radius: 50%;
 }
 
 .header .navbar a{
