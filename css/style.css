@@ -247,6 +247,7 @@ section{
 
 .about .row .image img{
     width: 100%;
+    height: 45rem;
 }
 .about .row .content{
     flex:1 1 45rem;
