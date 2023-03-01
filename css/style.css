@@ -13,7 +13,6 @@
     box-sizing: border-box;
     outline: none; border:none;
     text-decoration: none;
-    text-transform: capitalize;
     transition: .2s linear;
 }
 
@@ -221,16 +220,17 @@ section{
 .home .content h3{
     font-size: 6rem;
     text-transform: uppercase;
-    color:#fff;
-    font-family:Helvetica;
+    color: var(--main-color);
+    font-family: 'Bad Script', cursive;
 }
 
 .home .content p{
     font-size: 1.7rem;
     font-weight: bold;
+    font-family: 'Bad Script', cursive;
+    color: var(--black);
     line-height: 1.8;
-    padding:1rem 0;
-    color:rgb(255, 255, 255);
+    padding: 1rem 0;
 }
 
 /* ------------------------About ============== */
@@ -252,6 +252,7 @@ section{
 .about .row .content{
     flex:1 1 45rem;
     padding:2rem;
+    text-align: justify;
 }
 
 .about .row .content h3{
@@ -265,7 +266,9 @@ section{
     padding:1rem 0;
     line-height: 1.8;
 }
- /* ------------------------------menu----------------- */
+
+ /* ------------------------------bolos----------------- */
+
 .menu .box-container{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
@@ -307,6 +310,8 @@ section{
 .menu .box-container .box:hover > *{
     color:var(--black);
 }
+
+/*---------------------------trufas---------------------------------*/
 
 .products .box-container{
     display: grid;
@@ -367,42 +372,7 @@ section{
     font-size: 1.5rem;
 }
 
-.review .box-container{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-    gap:1.5rem;
-}
-
-.review .box-container .box{
-    border:var(--border);
-    text-align: center;
-    padding:3rem 2rem;
-}
-
-.review .box-container .box p{
-    font-size: 1.5rem;
-    line-height: 1.8;
-    color:#ccc;
-    padding:2rem 0;
-}
-
-.review .box-container .box .user{
-    height: 7rem;
-    width: 7rem;
-    border-radius: 50%;
-    object-fit: cover;
-}
-
-.review .box-container .box h3{
-    padding:1rem 0;
-    font-size: 2rem;
-    color:#fff;
-}
-
-.review .box-container .box .stars i{
-    font-size: 1.5rem;
-    color:var(--main-color);
-}
+/*-------------------------contatos-----------------------------*/
 
 .contact .row{
     display: flex;
@@ -452,60 +422,6 @@ section{
     color:#fff;
     text-transform: none;
     background:none;
-}
-
-.blogs .box-container{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-    gap:1.5rem;
-}
-
-.blogs .box-container .box{
-    border:var(--border);    
-}
-
-.blogs .box-container .box .image{
-    height: 25rem;
-    overflow:hidden;
-    width: 100%;
-}
-
-.blogs .box-container .box .image img{
-    height: 100%;
-    object-fit: cover;
-    width: 100%;
-}
-
-.blogs .box-container .box:hover .image img{
-    transform: scale(1.2);
-}
-
-.blogs .box-container .box .content{
-    padding:2rem;
-}
-
-.blogs .box-container .box .content .title{
-    font-size: 2.5rem;
-    line-height: 1.5;
-    color:#fff;
-}
-
-.blogs .box-container .box .content .title:hover{
-    color:var(--main-color);
-}
-
-.blogs .box-container .box .content span{
-    color:var(--main-color);
-    display: block;
-    padding-top: 1rem;
-    font-size: 2rem;
-}
-
-.blogs .box-container .box .content p{
-    font-size: 1.6rem;
-    line-height: 1.8;
-    color:#ccc;
-    padding:1rem 0;
 }
 
 .footer{
